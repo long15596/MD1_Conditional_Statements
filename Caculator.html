@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  table {
+    border: 4px solid black;
+    width: 400px;
+    height: 400px;
+  }
+  td {
+    border: 1px solid black;
+    text-align: center;
+  }
+  .display {
+    width: 350px;
+    height: 40px;
+  }
+  button {
+    font-size: medium;
+    border: white;
+    background: white;
+  }
+</style>
+<body>
+  <table>
+    <tr>
+      <th colspan="4">
+        <input type="text" class="display" id="display">
+      </th>
+    </tr>
+    <tr>
+      <td><button type="button" onclick="display('1')">1</button></td>
+      <td><button type="button" onclick="display('2')">2</button></td>
+      <td><button type="button" onclick="display('3')">3</button></td>
+      <td><button type="button" onclick="display('+')">+</button></td>
+    </tr>
+    <tr>
+      <td><button type="button" onclick="display('4')">4</button></td>
+      <td><button type="button" onclick="display('5')">5</button></td>
+      <td><button type="button" onclick="display('6')">6</button></td>
+      <td><button type="button" onclick="display('-')">-</button></td>
+    </tr>
+    <tr>
+      <td><button type="button" onclick="display('7')">7</button></td>
+      <td><button type="button" onclick="display('8')">8</button></td>
+      <td><button type="button" onclick="display('9')">9</button></td>
+      <td><button type="button" onclick="display('*')">x</button></td>
+    </tr>
+    <tr>
+      <td><button type="button" onclick="clr()">C</button></td>
+      <td><button type="button" onclick="display('0')">0</button></td>
+      <td><button type="button" onclick="result()">=</button></td>
+      <td><button type="button" onclick="display('/')">/</button></td>
+    </tr>
+  </table>
+</body>
+</html>
+<script src="Caculator.js"></script>
