@@ -8,7 +8,7 @@
   <form>
     <h1>Tính chỉ số cân nặng</h1>
     <p>Nhập cân nặng: (kg) <input type="text" id="weight"></p>
-    <p>Nhập chiều cao: (m) <input type="text" id="height"></p>
+    <p>Nhập chiều cao: (cm) <input type="text" id="height"></p>
     <input type="button" value="Kiểm Tra" id="check" onclick="checkBMI()">
     <p id="output"></p>
   </form>
@@ -16,7 +16,7 @@
     function checkBMI() {
       let weight = document.getElementById('weight').value;
       let height = document.getElementById('height').value;
-      let bmi = weight / Math.pow(height,2);
+      let bmi = weight / Math.pow(height/100,2);
       if (bmi < 18.5) {
         document.getElementById('output').innerHTML = "Underweight";
       } else if (bmi < 25.0) {
